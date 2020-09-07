@@ -1,0 +1,30 @@
+<div>
+    <h1>Any to any Comp Comp -Demo</h1>
+    <h2>My Profile</h2>
+    <p>Data coming from Account Service is: {{accountName}}</p>
+    <input type="text" [(ngModel)]= "duplicateAccountName" class="form-control">
+    <br>
+    <button type="button" class="btn btn-primary"
+    (click)="updateAccountHandler()">Update Account Name</button>
+
+    <hr>
+    <p>{{today}}</p>
+    <p>{{today | date}}</p>
+    <p>{{today | date: 'dd/MMMM/yyyy'}}</p>
+    <p>{{today | date: 'dd/MMMM/yyyy' }}</p> 
+    <p>{{today | date: 'MMMM dd, yyyy hh:mm:ss a' }}</p>
+
+    <p>{{randomText}}</p>
+    <p>{{randomText |uppercase }}</p>
+    
+    <h3>Custom Pipes</h3>
+    <pre>ng g p shared/pipes/ellipsis</pre>
+
+    <p>{{randomText}}</p>
+    <p>{{randomText | ellipsis }}</p>
+    <p>{{randomText | ellipsis: '24'}}</p>
+     
+    <hr>
+
+
+</div>
